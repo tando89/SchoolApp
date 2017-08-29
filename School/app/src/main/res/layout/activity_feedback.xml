@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.school.Feedback"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <!--Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@drawable/mainlogo"
+                android:layout_gravity="center"/>
+            <Button
+                android:text="Feedback to school"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/feedback01"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feedback"
+                android:onClick="feedbackSchool"/>
+
+            <Button
+                android:text="Feedback to CSE department"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/feedback02"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feedback"
+                android:onClick="feedbackDep"/>
+            <!--Social Media -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/faceBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_facebook"
+                    android:paddingRight="5dp"
+                    android:onClick="fbClick"/>
+
+                <ImageView
+                    android:id="@+id/googlePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_google"
+                    android:paddingRight="5dp"
+                    android:onClick="googleClick"/>
+
+                <ImageView
+                    android:id="@+id/linkedIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_linkedin"
+                    android:paddingRight="5dp"
+                    android:onClick="linkedInClick"/>
+
+                <ImageView
+                    android:id="@+id/youTube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_youtube"
+                    android:paddingRight="5dp"
+                    android:onClick="youTubeClick"/>
+
+                <ImageView
+                    android:id="@+id/twitterT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_twitter"
+                    android:paddingRight="5dp"
+                    android:onClick="twitterClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

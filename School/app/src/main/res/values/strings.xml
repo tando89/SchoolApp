@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">School</string>
+    <!-- Descriptions for the GPA Calculator activity-->
+    <string name="GradePoints">Grade points:\n
+    A: 4.00, A-: 3.70 \n
+    B+: 3.33, B: 3.00, B-: 2.70 \n
+    C+: 2.30, C: 2.00, C-: 1.70 \n
+    D+: 1.30, D: 1.00, D-: 0.70, F: 0.00
+    </string>
+    <string name="gpaCalc">Insert units and grade for each of your class:\n
+    *= required fields
+    </string>
+    <!-- Units and Grade points that will be in the list of Spinners -->
+    <string-array name="units">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="grade_points">
+        <item>grades</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>D-</item>
+        <item>F</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.school.AboutTheApp"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@drawable/mainlogo"
+                android:layout_gravity="center"
+                android:onClick="backHome"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School App"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_margin="20dp"
+                android:text="This app is developing by Tan Do. He is a student of CSUSB and majors in Computer Systems, and he developed this app as a project for his internship with professor Ken Han. This app is an informative app where users (students) can use to track, check, get notifications from the school, and also the users will be provided with some useful utilites. "/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

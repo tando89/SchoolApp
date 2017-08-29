@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tando.school">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon575"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loadPreferenceActivity"
+            android:label="Preference"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/PreferenceScreen" />
+        <activity
+            android:name=".AboutTheApp"
+            android:label="School App"
+            android:parentActivityName=".loadPreferenceActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".MySchoolAccount"
+            android:label="Account"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".Announcement"
+            android:label="Announcement"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".Feedback"
+            android:label="Feedback"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".SchoolFeedback"
+            android:label="Feedback to School"
+            android:parentActivityName=".Feedback"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".DepFeedback"
+            android:label="Feedback to CSE"
+            android:parentActivityName=".Feedback"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".Utilities"
+            android:label="Utilities"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".Calendar"
+            android:label="Calendar"
+            android:parentActivityName=".Utilities"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".GPAcalculator"
+            android:label="GPA Calculator"
+            android:parentActivityName=".Utilities"
+            android:theme="@style/customTheme" />
+        <activity android:name=".MyLocation"
+            android:label="My Location"
+            android:parentActivityName=".Utilities"
+            android:theme="@style/customTheme"/>
+    </application>
+
+</manifest>

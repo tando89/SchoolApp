@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="GENERAL">
+        <Preference
+            android:summary="About"
+            android:icon="@drawable/ic_about_24px">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.tando.school"
+                android:targetClass="com.tando.school.AboutTheApp">
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SUPPORT">
+        <Preference
+            android:summary="Email Developers"
+            android:icon="@drawable/ic_email_24px">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto: tantdo89@gmail.com"
+                />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

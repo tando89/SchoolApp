@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.school.MainActivity"
+    android:background="#FFF"
+    android:orientation="vertical">
+    <!-- Android phone can always be horizontal or vertical, so ScrollView will fit all of the orientations-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <!--Logo -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/mainlogo"
+                    android:layout_gravity="center"/>
+            <!--4 sections of the app -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My School Account"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mainpage"
+                android:onClick="StartAccount"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Announcement"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mainpage"
+                android:onClick="StartAnnoucement"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback/Advising"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mainpage"
+                android:onClick="StartFeedback"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilities"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mainpage"
+                android:onClick="StartUtils"
+                />
+            <!--Social Media -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/faceBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_facebook"
+                    android:paddingRight="5dp"
+                    android:onClick="fbClick"/>
+
+                <ImageView
+                    android:id="@+id/googlePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_google"
+                    android:paddingRight="5dp"
+                    android:onClick="googleClick"/>
+
+                <ImageView
+                    android:id="@+id/linkedIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_linkedin"
+                    android:paddingRight="5dp"
+                    android:onClick="linkedInClick"/>
+
+                <ImageView
+                    android:id="@+id/youTube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_youtube"
+                    android:paddingRight="5dp"
+                    android:onClick="youTubeClick"/>
+
+                <ImageView
+                    android:id="@+id/twitterT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_twitter"
+                    android:paddingRight="5dp"
+                    android:onClick="twitterClick"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
